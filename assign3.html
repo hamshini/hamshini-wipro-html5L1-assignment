@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Videos</title>
+<script>
+function play() { 
+        myVideo.play(); 
+} 
+function pause() {
+        myVideo.pause(); 
+}
+</script>
+<style>
+#part1{
+background:	aquamarine;
+}
+#part2{
+background:lightblue;
+}
+p{
+text-align:center;
+}
+</style>
+</head>
+<body>
+<form action="/action_page.php" method="get">
+<div id="part1" align="center" style="margin-bottom: 0;>
+ <h1><img src="video.png" alt="Video Icon" style="width:160px;height:100px;">Awesome Online Videos</h1>
+</div>
+<div id="part2"  align="center" style="margin-bottom: 0;>
+<video width="320" height="240" poster="big_buck_bunny.mp4" controls>
+<p><source src="big_buck_bunny.mp4" type="video/mp4">  Your browser does not support HTML5 video.</p>
+<!--<a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>-->
+</video>
+<button  onclick="play()" style="background-color: cyan;">Play</button>
+<button onclick="pause()" style="background-color: #46C7C7;">Pause</button>
+</div>
+</form>
+</body>
+</html>
